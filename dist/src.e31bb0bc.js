@@ -143,7 +143,7 @@ var step = function step() {
       n = n + 1;
       step();
     }
-  }, 0);
+  }, 100);
 };
 
 step();
@@ -175,7 +175,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64671" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50048" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
